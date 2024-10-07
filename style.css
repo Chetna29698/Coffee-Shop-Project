@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------header div------------------------------ */
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(201, 174, 174);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+.nav ul li{
+    list-style-type: none;
+    line-height: 80px;
+   
+}
+.nav ul li a{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+}
+.btn-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-nav button{
+    display: none;
+    font-size: 20px;
+}
+@media (Max-width:895px) {
+    .btn-nav button{
+        display: block;
+        
+    }
+    /* .nav ul{
+        display: none;
+    } */
+    .nav ul{
+        height:400px;
+        width: 100%;
+        background-color: aquamarine;
+        display: block;
+        top: 80px;
+        position: fixed;
+    }
+    
+}
+
+/* --------------------------------home div------------------------------------ */
+
+.home{
+    height: 570px;
+    width: 100%;
+    position: relative;
+}
+.home img{
+    height: 570px;
+    width: 100%;   
+}
+.home .text{
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    position: absolute;
+    top: 130px;
+    left: 90px;
+}
+.text small{
+    color: black;
+    font-size: 75px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+.text h1{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+.text p{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    /* right: 5px; */
+}
+.text button{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px 15px 20px;
+    position: relative;
+    top: 80px;
+    left: 20px;
+}
+
+/* -------------------------------about us---------------------------------- */
+
+.about{
+    height: 540px;
+    width: 100%;
+    /* background-color: rgb(207, 214, 147); */
+}
+
+.atext{
+    height: 500px;
+    width: 50%;
+    /* background-color: brown; */
+    float: left;
+    position: relative;
+}
+.atext h1{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    color: orangered;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.atext #p1{
+    position: absolute;
+    top: 160px;
+    left: 80px;
+    right: 50px;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+.atext #p2{
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    right: 50px;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+.atext button{
+    position: absolute;
+    top: 320px;
+    left: 80px;
+    background-color: black;
+    color: white;
+    padding: 8px 15px 8px 15px;
+}
+.aimg{
+    height: 500px;
+    width: 50%;
+    /* background-color: rgb(42, 120, 165); */
+    float: right;
+    overflow: hidden;
+}
+.aimg #img{
+    height: 430px;
+    width: 430px;
+    position: relative;
+    top: 60px;
+    /* transition: all 0.5s linear; */
+   
+    
+}
+/* .aimg #img:hover{
+    transform: scale(1.1);
+} */
+
+
+/* -----------------------------------------gallery---------------------------------- */
+
+.gallery{
+    height: 1200px;
+    width: 100%;
+    position: relative;
+    /* background-color: cornflowerblue; */
+}
+.gallery h1{
+    color: orangered;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    font-size: 40px;
+}
+.gallery p{
+    text-align: justify;
+    font-family: sans-serif;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    right: 60px;
+}
+.grid-contain{
+    height: 600px;
+    width: 90%;
+    /* background-color: cadetblue; */
+    position: relative;
+    top: 220px;
+    left: 50px;
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 280px 280px 280px;
+    gap: 30px;
+    justify-content: center;
+}
+.grid-item{
+    /* background-color: bisque; */
+    position: relative;
+
+}
+.grid-item img{
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    /* top: 15px; */
+    /* left: 65px; */
+
+}
+.div{
+    height: 280px;
+    width: 280px;
+    background-color: transparent;
+    /* z-index: 1; */
+    position: relative;
+    /* top: 50px; */
+}
+.div:hover{
+    background-color: rgba(235, 215, 186, 0.452);
+}
+
+/* ---------------------------------------service div-------------------------------- */
+
+.service{
+    height: 600px;
+    width: 100%;
+    /* background-color: aqua; */
+    background-image: url(img/servcie-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.service h1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 17px;
+    left: 400px;
+}
+.service p{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+.service-box{
+    /* height: 300px;
+    width: 100%; */
+    /* background-color: violet; */
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/* -------------original coffee------------ */
+ #original-coffee{
+    height: 220px;
+    width: 255px;
+    background-color: rgb(241, 101, 50);
+    
+}
+#ori-mug{
+    color: aqua;
+    font-size: 35px;
+    position: absolute;
+    top: 220px;
+    left: 160px;
+}
+#original-coffee #ori-head{
+    color: white;
+    font-family: sans-serif;
+    font-size: 27px;
+    position: absolute;
+    top: 280px;
+    left: 90px;
+}
+#original-coffee .ori-para{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 330px;
+    left: 90px;
+    right: 700px;
+}
+#original-coffee #ori-btn{
+    position: absolute;
+    top: 400px;
+    left: 130px;
+    padding: 5px 10px 5px 10px;
+    display: none;
+} 
+/* ------------coffee flavor----------------- */
+ #coffee-flavor{
+    height: 220px;
+    width: 255px;
+    background-color: rgb(241, 101, 50);
+   
+}
+#fla-mug{
+    color: aqua;
+    font-size: 35px;
+    position: absolute;
+    top: 220px;
+    left: 490px;
+}
+#coffee-flavor #fla-head{
+    color: white;
+    font-family: sans-serif;
+    font-size: 26px;
+    position: absolute;
+    top: 280px;
+    left: 395px;
+}
+#coffee-flavor .fla-para{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 330px;
+    left: 395px;
+    right: 400px;
+}
+#coffee-flavor #fla-btn{
+    position: absolute;
+    top: 400px;
+    left: 450px;
+    padding: 5px 10px 5px 10px;
+    display: none;
+} 
+/* ------------------pleasant-abient---------------- */
+ #pleasant-abient{
+    height: 220px;
+    width: 255px;
+    background-color: rgb(241, 101, 50);
+    
+}
+#abi-mug{
+    color: aqua;
+    font-size: 35px;
+    position: absolute;
+    top: 220px;
+    right: 170px;
+}
+#pleasant-abient #abi-head{
+    color: white;
+    font-family: sans-serif;
+    font-size: 27px;
+    position: absolute;
+    top: 280px;
+    right: 85px;
+}
+#pleasant-abient .abi-para{
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 330px;
+    left: 720px;
+    right: 70px;
+}
+#pleasant-abient #abi-btn{
+    position: absolute;
+    top: 400px;
+    right: 140px;
+    padding: 5px 10px 5px 10px;
+    display: none;
+} 
+/* ------------------------------------contact us-------------------------------- */
+.contact{
+    height: 650px;
+    width: 100%;
+    /* background-color: pink; */
+   
+}
+.contact h1{
+    color: orangered;
+    font-family: sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+/*------input------*/
+.inputs{
+    height: 500px;
+    width: 50%;
+    /* background-color: darkgrey; */
+    background-image: url(img/servcie-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    margin-top: 70px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.form #name{
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.form #email{
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.form #num{
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 18px;
+}
+.form #mess{
+    height: 120px;
+    width: 90%;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 19px;
+}
+.form #send_btn{
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+/*------map------*/
+.map{
+    height: 500px;
+    width: 50%;
+    /* background-color: rgb(84, 175, 218); */
+    float: right;
+    margin-top: 70px;
+}
+
+/* -------------------------------footer div------------------------------- */
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#fabout{
+    height: 260px;
+    width: 25%;
+    /* background-color: rgb(233, 58, 58); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+#fabout h2{
+    padding-right: 150px;
+}
+#fabout p{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+#fmenu{
+    height: 260px;
+    width: 25%;
+    /* background-color: rgb(58, 163, 233); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+#fmenu h2{
+    padding-right: 150px;
+}
+#fmenu ul{
+    padding-top: 15px;
+    padding-right: 130px;
+}
+#fmenu li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+#flink{
+    height: 260px;
+    width: 25%;
+    /* background-color: rgb(58, 233, 96); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+#flink h2{
+    padding-right: 100px;
+}
+#flink ul{
+    padding-top: 15px;
+    padding-right: 150px;
+}
+#flink li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+#fcontact{
+    height: 260px;
+    width: 25%;
+    /* background-color: rgb(233, 230, 58); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+#fcontact h2{
+    padding-right: 100px;
+    padding-bottom: 15px;
+}
+#fcontact ul{
+    padding-bottom: 40px;
+    padding-right: 30px;
+}
+#fcontact li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom: 15px;
+}

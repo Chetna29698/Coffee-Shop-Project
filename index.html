@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+
+</head>
+
+<body>
+
+    <!-- ------------------------------header div--------------------------- -->
+    <div class="header">
+        <div class="logo">
+            <h1>GrandCoffee</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-nav">
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+
+
+
+
+    <!-- -------------------------------------home div----------------------------- -->
+
+    <a name="home"></a>
+    <div class="home">
+        <img src="img/coffee.jpg" alt="">
+        <div class="text">
+            <small>Outstanding</small>
+            <h1>Coffee Shop</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vitae harum neque asperiores quidem voluptatem
+                dolores?voluptatem dolores?
+            </p>
+            <button onclick="btn()" id="home-btn">Learn More</button>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------about us---------------------------------- -->
+    <a name="about"></a>
+    <div class="about">
+        <div class="atext">
+            <h1>About Us</h1>
+            <p id="p1">Full cleaning and housekeeping for companies and households.</p>
+            <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maxime error quas deserunt
+                corporis velit suscipit voluptatum
+
+            </p>
+            <button id="abtn">Read More</button>
+        </div>
+        <div class="aimg">
+            <img src="img/about-coffee.jpg" alt="" id="img">
+        </div>
+    </div>
+
+    <!-- ----------------------------------GAllery------------------------------------ -->
+    <a name="gallery"></a>
+    <div class="gallery">
+        <h1>Our Gallery</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum incidunt architecto minus
+            labore quod totam aspernatur sunt ex praesentium dicta inventore omnis eligendi voluptatibus quis,
+            tenetur
+            veniam accusantium atque?
+        </p>
+        <div class="grid-contain">
+            <div class="grid-item">
+                <img src="img/g1.png" alt="">
+                <div class="div">
+
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g2.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g3.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g4.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g5.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g6.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g7.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g8.png" alt="">
+                <div class="div"></div>
+            </div>
+            <div class="grid-item">
+                <img src="img/g9.png" alt="">
+                <div class="div"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------services div-------------------------------------- -->
+    <a name="services"></a>
+    <div class="service">
+        <h1>Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, neque!</p>
+
+        <div class="service-box">
+            <div id="original-coffee">
+                <i class="fa-solid fa-mug-saucer" id="ori-mug"></i>
+                <h2 id="ori-head">Original coffee</h2>
+                <p class="ori-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio!</p>
+                <button id="ori-btn">Read More</button>
+            </div>
+
+            <div id="coffee-flavor">
+                <i class="fa-solid fa-mug-hot" id="fla-mug"></i>
+                <h2 id="fla-head">20 Coffee Flavors</h2>
+                <p class="fla-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio!</p>
+                <button id="fla-btn">Read More</button>
+            </div>
+
+            <div id="pleasant-abient">
+                <i class="fa-solid fa-mug-saucer" id="abi-mug"></i>
+                <h2 id="abi-head">Pleasant Abient</h2>
+                <p class="abi-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio!</p>
+                <button id="abi-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------contact us--------------------------------- -->
+    <a name="contact"></a>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <div class="inputs">
+            <form class="form" action="action.php">
+                <input type="text" id="name" placeholder="Name"><br>
+                <input type="email" name="" id="email" placeholder="Email"><br>
+                <input type="number" name="" id="num" placeholder="Phone Number"><br>
+                <textarea name="" id="mess" cols="25" rows="7" placeholder="Message"></textarea>
+                <button id="send_btn">Send</button>
+            </form>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1890094874793!2d72.97176437425469!3d19.186945248482026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b920a5b0069f%3A0x80d6018b60302fa3!2sNettech%20India!5e0!3m2!1sen!2sin!4v1723702106726!5m2!1sen!2sin"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- -------------------------------footer div------------------------------------- -->
+    <div class="footer">
+        <div id="fabout">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam, magnam odio perspiciatis
+                repellendus, placeat laudantium quos commodi sint tempora asperiores 
+                </p>
+        </div>
+        <div id="fmenu">
+            <h2>Menu</h2>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Gallery</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div id="flink">
+            <h2>Useful Link</h2>
+            <ul>
+                <li>Lorem</li>
+                <li>ipsum</li>
+                <li>dolor</li>
+                <li>placeat</li>
+                <li>commodi</li>
+            </ul>
+        </div>
+        <div id="fcontact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><i style="color: white;" class="fa-solid fa-location-dot"></i>Address :Lorem ipsum</li>
+                <li><i style="color: white;" class="fa-solid fa-phone"></i>Call : +01 1234567890</li>
+                <li><i style="color: white;" class="fa-solid fa-envelope"></i>Email : demo@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- --------------------------------script div------------------------------- -->
+    <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // ---------------originalcoffee---------------------
+            $("#original-coffee").mouseover(function () {
+                $(this).css("height", "250px")
+                $(this).css("background-color", "white")
+                $("#ori-head").css("color", "black")
+                $(".ori-para").css("color", "black")
+                $("#ori-btn").css("display", "block")
+            })
+            $("#original-coffee").mouseleave(function () {
+                $(this).css("height", "220px")
+                $(this).css("background-color", "rgb(241, 101, 50)")
+                $("#ori-head").css("color", "white")
+                $(".ori-para").css("color", "white")
+                $("#ori-btn").css("display", "none")
+            })
+            // -------------------------------coffeeflavor-----------------
+            $("#coffee-flavor").mouseover(function () {
+                $(this).css("height", "250px")
+                $(this).css("background-color", "white")
+                $("#fla-head").css("color", "black")
+                $(".fla-para").css("color", "black")
+                $("#fla-btn").css("display", "block")
+            })
+            $("#coffee-flavor").mouseleave(function () {
+                $(this).css("height", "220px")
+                $(this).css("background-color", "rgb(241, 101, 50)")
+                $("#fla-head").css("color", "white")
+                $(".fla-para").css("color", "white")
+                $("#fla-btn").css("display", "none")
+            })
+            // -----------------------pleasant-abient---------------
+            $("#pleasant-abient").mouseover(function () {
+                $(this).css("height", "250px")
+                $(this).css("background-color", "white")
+                $("#abi-head").css("color", "black")
+                $(".abi-para").css("color", "black")
+                $("#abi-btn").css("display", "block")
+            })
+            $("#pleasant-abient").mouseleave(function () {
+                $(this).css("height", "220px")
+                $(this).css("background-color", "rgb(241, 101, 50)")
+                $("#abi-head").css("color", "white")
+                $(".abi-para").css("color", "white")
+                $("#abi-btn").css("display", "none")
+            })
+        })
+    </script>
+<!-- ----------------------------------contact------------------------------- -->
+    
+    <script>
+
+    </script>
+</body>
+
+</html>
